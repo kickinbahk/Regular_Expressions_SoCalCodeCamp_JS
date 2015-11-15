@@ -48,7 +48,7 @@
 
 -------------------------------
 
-##Lookahead
+##Lookaheads
 
 ####Positive
 `gandalf_quote2.replace(/Bilbo\s(?=Baggins)/, "");`
@@ -56,4 +56,30 @@
 ####Negative
 `gandalf_quote2.replace(/name(?!,)/, "name,");`
 
+------------------------------
+
+##Capture groups
+
+###Captured
+`gandalf_quote1.replace(/(Gandalf)/, "$1 The Gray");`
+
+####Non-Captured:
+`gandalf_quote1.replace(/(?:Gandalf)/, "$1 The Gray")`
+
+
+####Sample
+```/.*\.com&&|\/(?:(?:groups\/[^\/]+\/videos\/)|(?:ondemand|channels)(?:(?:\/less\/)|(?:user[0-9]+\/review\/)?([0-9]+).*|(?:\/\w*\/))|(?:video\/))?([0-9]+).*$/```
+
 <!--End-->
+
+
+
+
+
+
+
+
+
+
+
+
